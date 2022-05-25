@@ -19,16 +19,16 @@ public class Ejecutor {
         Enfermero[] e = new Enfermero[2];
         Ciudad c = new Ciudad("Loja","Loja");
         
-        Medico med1 = new Medico("Juan Perez", "Neurocirujano", 5605.73);
-        Medico med2 = new Medico("Sofia Rojas", "Pediatar", 3263.67);
-        Medico med3 = new Medico("Pedro Picapiedra", "Cardiologo", 4892.82);
+        Medico med1 = new Medico("Juan Perez", "Neurocirujano", 1605.73);
+        Medico med2 = new Medico("Sofia Rojas", "Pediatar", 1263.67);
+        Medico med3 = new Medico("Pedro Picapiedra", "Cardiologo", 1892.82);
         
         m[0] = med1;
         m[1] = med2 ;
         m[2] = med3;
         
-        Enfermero enf1 = new Enfermero("Aelin Galanthynius","suplente", 1100.3);
-        Enfermero enf2 = new Enfermero("Harry Potter","nombramiento", 1468.3);
+        Enfermero enf1 = new Enfermero("Aelin Galanthynius","suplente", 800.3);
+        Enfermero enf2 = new Enfermero("Harry Potter","nombramiento", 1068.3);
         e[0] = enf1;
         e[1] = enf2;
         

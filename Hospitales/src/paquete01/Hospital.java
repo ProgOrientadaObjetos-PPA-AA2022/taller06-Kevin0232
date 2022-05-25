@@ -86,8 +86,8 @@ public class Hospital {
     
     @Override
     public String toString(){
-        String cadena = String.format("Hospital %s\nDirección: %s\nCiudad: %s\nProvincia"
-                + ": %s\nNúmero de especialidades: %s \nListado de médicos\n",obtenerNombre(),obtenerDir(),
+        String cadena = String.format("HOSPITAL %s\nDirección: %s\nCiudad: %s\nProvincia"
+                + ": %s\nNúmero de especialidades: %s \nListado de médicos\n",obtenerNombre().toUpperCase(),obtenerDir(),
                 ciudadH.obtenerNombre(),ciudadH.obtenerProvincia(),obtenerEspecialidad());
         
         for (int i = 0; i < medH.length; i++) {
@@ -95,13 +95,13 @@ public class Hospital {
                     ,medH[i].obtenerSueldo(),medH[i].obtenerEspecialidad());
         }
         
-        cadena = String.format("%sListado de Enfermeros(as)\n", cadena);
+        cadena = String.format("%s\nListado de Enfermeros(as)\n", cadena);
         for (int i = 0; i < enfH.length; i++) {
             cadena = String.format("%s- %s - sueldo: %.2f - %s\n",cadena,enfH[i].obtenerNombre()
                     ,enfH[i].obtenerSueldo(),enfH[i].obtenerContrato());
         }
         
-        cadena = String.format("%sTotal de sueldos a pagar por mes: %.2f\n",cadena,obtenerSueldo());
+        cadena = String.format("%s\nTotal de sueldos a pagar por mes: %.2f\n",cadena,obtenerSueldo());
         return cadena;
     }
     
